@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/Responsive.css">
+  <title></title>
+</head>
+
+<body>
+ 
+  <div id="navSlider">
+
+  </div>
+  <nav id="navBar">
+
+  </nav>
+  <div id="icons">
+  </div>
+  <div class="container  section-top">
+    <div class="row align-items-center">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb my-5">
+          <li class="breadcrumb-item"><a href="index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path
+                  d="M1.5 9.93841C1.5 8.71422 2.06058 7.55744 3.02142 6.79888L8.52142 2.45677C9.97466 1.30948 12.0253 1.30948 13.4786 2.45677L18.9786 6.79888C19.9394 7.55744 20.5 8.71422 20.5 9.93841V16.5C20.5 18.7091 18.7091 20.5 16.5 20.5H15C14.4477 20.5 14 20.0523 14 19.5V16.5C14 15.3954 13.1046 14.5 12 14.5H10C8.89543 14.5 8 15.3954 8 16.5V19.5C8 20.0523 7.55228 20.5 7 20.5H5.5C3.29086 20.5 1.5 18.7091 1.5 16.5L1.5 9.93841Z"
+                  fill="#9D9D9D" stroke="#9D9D9D" stroke-width="1.5" />
+              </svg>
+            </a></li>
+            <li class="breadcrumb-item fw-semibold" aria-current="page">all products
+            </a></li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <div class="gray-bage">
+    <div class="container ">
+      <div class="row ">
+        <h3>All product</h3>
+        <h4 class="d-lg-none d-block py-3 fs-6 fw-bold text-uppercase " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+          Filter
+          <span><i class="fa-solid fa-filter"></i></span>
+        </h4>
+      </div>
+    </div>
+  </div>
+  <div class="container my-5">
+    <div class="row  ">
+      <div class="col-lg-3 d-lg-block d-none border border-1 border-black my-3 ">
+        <div class="row px-3">
+          <h4 class="py-3 fs-6 fw-bold text-uppercase border-bottom px-0">
+            Filter
+          </h4>
+        </div>
+        <div class="row  px-3  my-3 justify-content-between">
+          <h6 class="p-0 fw-semibold fs-5">
+            Category
+          </h6>
+          <form action="" class="p-0">
+            <div class=" p-2 d-flex align-items-center">
+              <input type="checkbox" id="check1" name="check1" class="p-2">
+              <label for="check1" class="fs-6 px-2">New in
+              </label>
+
+            </div>
+            <div class="p-2 d-flex align-items-center">
+              <input type="checkbox" id="check2" name="check2">
+              <label for="check2" class="fs-6 px-2"> Summer wear
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="row gy-1 px-3  my-3 justify-content-between buttonContainer" id="">
+          <div class="col-12 d-flex justify-content-between align-items-center">
+            <h6 class="p-0 fw-semibold fs-5">
+             size
+            </h6>
+            <h6 class="text-secondary" role="button" data-bs-toggle="modal" data-bs-target="#filter"><span class="text-decoration-underline px-2">view chart</span><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <mask id="mask0_47_2690" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+                <rect y="3.05176e-05" width="16" height="16" fill="#D9D9D9"/>
+              </mask>
+              <g mask="url(#mask0_47_2690)">
+                <path d="M2.66683 12C2.30016 12 1.98627 11.8695 1.72516 11.6084C1.46405 11.3473 1.3335 11.0334 1.3335 10.6667V5.33336C1.3335 4.9667 1.46405 4.65281 1.72516 4.3917C1.98627 4.13059 2.30016 4.00003 2.66683 4.00003H13.3335C13.7002 4.00003 14.0141 4.13059 14.2752 4.3917C14.5363 4.65281 14.6668 4.9667 14.6668 5.33336V10.6667C14.6668 11.0334 14.5363 11.3473 14.2752 11.6084C14.0141 11.8695 13.7002 12 13.3335 12H2.66683ZM2.66683 10.6667H13.3335V5.33336H11.3335V8.00003H10.0002V5.33336H8.66683V8.00003H7.3335V5.33336H6.00016V8.00003H4.66683V5.33336H2.66683V10.6667Z" fill="#9D9D9D"/>
+              </g>
+            </svg></span></h6>
+          </div>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4 active">
+            46.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            47.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            48.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            49.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            50.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            51.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            52.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            53.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            54.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            55.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            56.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            57.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            58.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            59.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            60.0
+          </button>
+        <div class="col-12 py-2">
+          <h6 class="text-secondary" role="button"><span class="text-decoration-underline viewAllButton1" id="">view all sizes</span></h6>
+        </div>
+        </div>
+        <div class="row  px-3  my-3 justify-content-between buttonContainer2">
+          <h6 class="p-0 fw-semibold fs-5">
+            color
+          </h6>
+          <div class="d-flex gap-2 flex-wrap">
+            <div class="color" style="border-color: #0C0C0C !important;">
+              <div class="border-white  border-2 w-100 h-100">
+                <div class="w-100 h-100 rounded-circle" style="background-color: #0C0C0C;"></div>
+              </div>
+            </div>
+            <div class="color " style="border-color: #6D6DBB !important;">
+              <div class="border-white  border-2 w-100 h-100">
+                <div class="w-100 h-100 rounded-circle" style="background-color: #6D6DBB;"></div>
+              </div>
+            </div>
+            <div class="color " style="border-color: #172B85 !important;">
+              <div class="border-white  border-2 w-100 h-100">
+                <div class="w-100 h-100 rounded-circle" style="background-color: #172B85;"></div>
+              </div>
+            </div>
+            <div class="color " style="border-color: #CE1126 !important;">
+              <div class="border-white  border-2 w-100 h-100">
+                <div class="w-100 h-100 rounded-circle" style="background-color: #CE1126;"></div>
+              </div>
+            </div>
+            <div class="color " style="border-color: #000000 !important;">
+              <div class="border-white  border-2 w-100 h-100">
+                <div class="w-100 h-100 rounded-circle" style="background-color: #FFF ;"></div>
+              </div>
+            </div>
+            <div class="color " style="border-color: #F9A000 !important;">
+              <div class="border-white  border-2 w-100 h-100">
+                <div class="w-100 h-100 rounded-circle" style="background-color: #F9A000;"></div>
+              </div>
+            </div>
+            <div class="color " style="border-color: #FF5E00 !important;">
+              <div class="border-white  border-2 w-100 h-100">
+                <div class="w-100 h-100 rounded-circle" style="background-color: #FF5E00;"></div>
+              </div>
+            </div>
+            <div class="color " style="border-color: #736450 !important;">
+              <div class="border-white  border-2 w-100 h-100">
+                <div class="w-100 h-100 rounded-circle" style="background-color: #736450;"></div>
+              </div>
+            </div>
+            <div class="color " style="border-color: #F9A000 !important;">
+              <div class="border-white  border-2 w-100 h-100">
+                <div class="w-100 h-100 rounded-circle" style="background-color: #F9A000;"></div>
+              </div>
+            </div>
+            <div class="color " style="border-color: #FF5E00 !important;">
+              <div class="border-white  border-2 w-100 h-100">
+                <div class="w-100 h-100 rounded-circle" style="background-color: #FF5E00;"></div>
+              </div>
+            </div>
+            <div class="color " style="border-color: #736450 !important;">
+              <div class="border-white  border-2 w-100 h-100">
+                <div class="w-100 h-100 rounded-circle" style="background-color: #736450;"></div>
+              </div>
+            </div>
+          </div>
+
+<div>
+</div>
+<div class="col-12 py-2">
+  <h6 class="text-secondary" role="button"><span class="text-decoration-underline viewAllButton2" id="">view all colors</span></h6>
+</div>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="row justify-content-center align-items-center">
+          <div class="img d-flex justify-content-center">
+          <img src="assets/imgs/empaty/7166991_3554477 1.svg"/>
+          </div>
+          <div class="py-4">
+            <p class="text-secondary text-center">No page found</p>
+          </div>
+          </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+
+  <div id="gray-footer">
+  </div>
+  <footer id="footer">
+  </footer>
+  <div id="sideNav">
+  </div>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header justify-content-end">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body ">
+      <div class=" ">
+        <div class="row px-3 ">
+          <h4 class="py-3 fs-6 fw-bold text-uppercase border-bottom px-0">
+            Filter
+          </h4>
+        </div>
+        <div class="row  px-3  my-3 justify-content-between">
+          <h6 class="p-0 fw-semibold fs-5">
+            Category
+          </h6>
+          <form action="" class="p-0">
+            <div class=" p-2 d-flex align-items-center">
+              <input type="checkbox" id="check3" name="check1" class="p-2">
+              <label for="check3" class="fs-6 px-2">New in
+              </label>
+
+            </div>
+            <div class="p-2 d-flex align-items-center">
+              <input type="checkbox" id="check4" name="check2">
+              <label for="check4" class="fs-6 px-2"> Summer wear
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="row gap-1 px-3  my-3 justify-content-start buttonContainer3" id="">
+          <div class="col-12 d-flex justify-content-between align-items-center">
+            <h6 class="p-0 fw-semibold fs-5">
+             size
+            </h6>
+            <h6 class="text-secondary" role="button" data-bs-toggle="modal" data-bs-target="#filter"><span class="text-decoration-underline px-2">view chart</span><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <mask id="mask0_47_2690" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+                <rect y="3.05176e-05" width="16" height="16" fill="#D9D9D9"/>
+              </mask>
+              <g mask="url(#mask0_47_2690)">
+                <path d="M2.66683 12C2.30016 12 1.98627 11.8695 1.72516 11.6084C1.46405 11.3473 1.3335 11.0334 1.3335 10.6667V5.33336C1.3335 4.9667 1.46405 4.65281 1.72516 4.3917C1.98627 4.13059 2.30016 4.00003 2.66683 4.00003H13.3335C13.7002 4.00003 14.0141 4.13059 14.2752 4.3917C14.5363 4.65281 14.6668 4.9667 14.6668 5.33336V10.6667C14.6668 11.0334 14.5363 11.3473 14.2752 11.6084C14.0141 11.8695 13.7002 12 13.3335 12H2.66683ZM2.66683 10.6667H13.3335V5.33336H11.3335V8.00003H10.0002V5.33336H8.66683V8.00003H7.3335V5.33336H6.00016V8.00003H4.66683V5.33336H2.66683V10.6667Z" fill="#9D9D9D"/>
+              </g>
+            </svg></span></h6>
+          </div>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4 active">
+            46.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            47.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            48.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            49.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            50.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            51.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            52.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            53.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            54.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            55.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            56.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            57.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            58.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            59.0
+          </button>
+          <button class="col-4 border-1 btn btn-outline-dark length rounded-2 w-auto px-4">
+            60.0
+          </button>
+        <div class="col-12 py-2">
+          <h6 class="text-secondary" role="button"><span class="text-decoration-underline viewAllButton1" id="">view all sizes</span></h6>
+        </div>
+        </div>
+        <div class="row  px-3  my-3 justify-content-between buttonContainer4">
+          <h6 class="p-0 fw-semibold fs-5">
+            color
+          </h6>
+          <div class="d-flex gap-2 flex-wrap">
+            <div class="color" style="border-color: #0C0C0C !important;">
+              <div class="border-white  border-2 w-100 h-100">
+                <div class="w-100 h-100" style="background-color: #0C0C0C;"></div>
+              </div>
+            </div>
+            <div class="color " style="border-color: #6D6DBB !important;">
+              <div class="border-white  border-2 w-100 h-100">
+                <div class="w-100 h-100 rounded-circle" style="background-color: #6D6DBB;"></div>
+              </div>
+            </div>
+            <div class="color " style="border-color: #172B85 !important;">
+              <div class="border-white  border-2 w-100 h-100">
+                <div class="w-100 h-100 rounded-circle" style="background-color: #172B85;"></div>
+              </div>
+            </div>
+            <div class="color " style="border-color: #CE1126 !important;">
+              <div class="border-white  border-2 w-100 h-100">
+                <div class="w-100 h-100 rounded-circle" style="background-color: #CE1126;"></div>
+              </div>
+              
+            </div>
+            <div class="color " style="border-color: #000000 !important;">
+              <div class="border-white border-2 w-100 h-100">
+                <div class="w-100 h-100 rounded-circle" style="background-color: #FFF ;"></div>
+              </div>
+            </div>
+            <div class="color " style="border-color: #F9A000 !important;">
+              <div class="border-white  border-2 w-100 h-100">
+                <div class="w-100 h-100 rounded-circle" style="background-color: #F9A000;"></div>
+              </div>
+            </div>
+            <div class="color " style="border-color: #FF5E00 !important;">
+              <div class="border-white  border-2 w-100 h-100">
+                <div class="w-100 h-100 rounded-circle" style="background-color: #FF5E00;"></div>
+              </div>
+            </div>
+            <div class="color " style="border-color: #736450 !important;">
+              <div class="border-white  border-2 w-100 h-100">
+                <div class="w-100 h-100 rounded-circle" style="background-color: #736450;"></div>
+              </div>
+            </div>
+            <div class="color " style="border-color: #F9A000 !important;">
+              <div class="border-white  border-2 w-100 h-100">
+                <div class="w-100 h-100 rounded-circle" style="background-color: #F9A000;"></div>
+              </div>
+            </div>
+            <div class="color " style="border-color: #FF5E00 !important;">
+              <div class="border-white  border-2 w-100 h-100">
+                <div class="w-100 h-100 rounded-circle" style="background-color: #FF5E00;"></div>
+              </div>
+            </div>
+            <div class="color " style="border-color: #000000 !important;">
+              <div class="border-white  border-2 w-100 h-100">
+                <div class="w-100 h-100 rounded-circle" style="background-color: #FFF ;"></div>
+              </div>
+            </div>
+            <div class="color " style="border-color: #736450 !important;">
+              <div class="border-white  border-2 w-100 h-100">
+                <div class="w-100 h-100 rounded-circle" style="background-color: #736450;"></div>
+              </div>
+            </div>
+          </div>
+
+<div>
+</div>
+<div class="col-12 py-2">
+  <h6 class="text-secondary" role="button"><span class="text-decoration-underline viewAllButton2" id="">view all colors</span></h6>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+    integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="assets/js/index.js"></script>
+
+  <script>
+
+    AOS.init({
+      once: true
+    })
+    document.addEventListener('DOMContentLoaded', function () {
+
+function handleButtonClick(buttons, currentButton) {
+  buttons.forEach(btn => {
+    if (btn !== currentButton) {
+      btn.classList.remove('active');
+    }
+  });
+  currentButton.classList.toggle('active');
+}
+
+const sizeButtons = document.querySelectorAll('.length');
+sizeButtons.forEach(button => {
+  button.addEventListener('click', function () {
+    handleButtonClick(sizeButtons, this);
+  });
+});
+
+const colorButtons = document.querySelectorAll('.color');
+colorButtons.forEach(button => {
+  button.addEventListener('click', function () {
+    handleButtonClick(colorButtons, this);
+  });
+});
+
+});
+$(document).ready(function () {
+    const viewAllButton1 = $('.viewAllButton1');
+    const viewAllButton2 = $('.viewAllButton2');
+
+    $('.buttonContainer button:gt(6)').hide();
+    $('.buttonContainer2 div .color:gt(6)').hide();
+    $('.buttonContainer3 button:gt(6)').hide();
+    $('.buttonContainer4 div .color:gt(6)').hide();
+
+    viewAllButton1.click(function () {
+        $('.buttonContainer button:gt(6)').toggle();
+        $('.buttonContainer3 button:gt(6)').toggle();
+
+    });
+
+    viewAllButton2.click(function () {
+        $('.buttonContainer2 div .color:gt(6)').toggle();
+        $('.buttonContainer4 div .color:gt(6)').toggle();
+
+    });
+});
+  </script>
+  
+</body>
+
+</html>

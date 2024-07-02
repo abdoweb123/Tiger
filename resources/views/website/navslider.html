@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/Responsive.css">
+  <title></title>
+</head>
+
+<body>
+
+  <div class="nav-slider">
+    <div class="container  d-block">
+
+      <div class="d-flex justify-content-between py-2">
+        <div class=" login ">
+          <button type="button" class="btn btn-outline-dark" onclick="document.location='login.html'">
+            <span>
+              <i class="fa-solid fa-user"></i>
+            </span>
+            تسجيل الدخول
+
+          </button>
+        </div>
+        <div class="direction">
+          <div class="btn-group" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" role="group"
+            aria-label="Basic outlined example">
+            <button type="button" class="btn btn-outline-dark">السعودية-الرياض</button>
+            <button type="button" class="btn btn-outline-dark"><span>
+                <i class="fa-solid fa-globe"></i>
+              </span>
+
+              English
+
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row gap-2 fs-6">
+              <div class="col-5">
+                <h6>
+                  العملة
+                </h6>
+                <select class=" btn-sm w-100 gray-bage border-0 px-2" aria-label="Default select example">
+                  <option selected> دأ</option>
+                  <option value="">ر.س</option>
+                </select>
+              </div>
+              <div class="col-5">
+                <h6>اللغة </h6>
+                <select class=" btn-sm w-100 gray-bage border-0 px-2" aria-label="Default select example">
+                  <option selected> العربية</option>
+                  <option value="eng">الانجليزية</option>
+                </select>
+              </div>
+              <div class="col-5">
+                <h6>الدولة</h6>
+                <select class=" btn-sm w-100 gray-bage border-0 px-2" aria-label="Default select example">
+                  <option selected> الدولة</option>
+                  <option value="الاحدث">السعودية</option>
+                  <option value="DE">ر.س</option>
+                </select>
+              </div>
+              <div class="col-5">
+                <h6>المدينة</h6>
+                <select class=" btn-sm w-100 gray-bage border-0 px-2" aria-label="Default select example">
+                  <option selected> الرياض</option>
+                  <option value="الاحدث">دأ</option>
+                  <option value="DE">ر.س</option>
+                </select>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer modal-footer-nav">
+          <button type="button" class="btn gray-bage border-0">حفظ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

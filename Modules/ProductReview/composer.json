@@ -1,0 +1,31 @@
+{
+    "name": "nwidart/productreview",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\ProductReview\\": "",
+            "Modules\\ProductReview\\App\\": "app/",
+            "Modules\\ProductReview\\Database\\Factories\\": "database/factories/",
+            "Modules\\ProductReview\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\ProductReview\\Tests\\": "tests/"
+        }
+    }
+}
